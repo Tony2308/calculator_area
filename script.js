@@ -22,8 +22,8 @@ function areaCircle(radius) {
 }
 
 //sphere function
-function areaSphere(radius) {
-	const areaSphere = 4 * 3.142 *radius*radius;
+function areaSphere(sphereRadius) {
+	const areaSphere = (4 * 3.142 *sphereRadius*sphereRadius);
 	return areaSphere;
 }
 
