@@ -21,6 +21,12 @@ function areaCircle(radius) {
 	return areaCircle;
 }
 
+//sphere function
+function areaSphere(radius) {
+	const areaSphere = 4 * 3.142 *radius*radius;
+	return areaSphere;
+}
+
 //variable declarations and initializations
 let cirle;
 let rectangle;
@@ -33,6 +39,7 @@ let shapeDetail = document.querySelector('.shapeDetail');
 let circleParam = document.querySelector('#circleParam');
 let squareParam = document.querySelector('#squareParam');
 let rectangleParam = document.querySelector('#rectangleParam');
+let sphereParam = document.querySelector('#sphereParam');
 let customParam = document.querySelector('#customParam');
 
 //parametres variables
@@ -40,25 +47,34 @@ let customParam = document.querySelector('#customParam');
 let squareLength = document.querySelector('#squareLength');
 let rectangleLength = document.querySelector('#rectangleLength');
 let width = document.querySelector('#width');
-let radius = document.querySelector('#radius');
+let circleRadius = document.querySelector('#circleRadius');
+let sphereRadius = document.querySelector('#sphereRadius');
 
 //displaying the selected parameter details
 function shapeData(){
-	if( choice.value ==  'circle'){
+	if( choice.value ===  'circle'){
 
 		circleParam.style.display = 'block';
 		squareParam.style.display = 'none';
 		rectangleParam.style.display = 'none';
+		sphereParam.style.display = 'none';
 		
-	} else if( choice.value ==  'square' ){
+	} else if( choice.value === 'square' ){
 		squareParam.style.display = 'block';
 		circleParam.style.display = 'none';
 		rectangleParam.style.display = 'none';
+		sphereParam.style.display = 'none';
 
-	}else if( choice.value ==  'rectangle'  ) {
+	}else if( choice.value ===  'rectangle'  ) {
 		rectangleParam.style.display = 'block';
 		squareParam.style.display = 'none';
 		circleParam.style.display = 'none';
+		sphereParam.style.display = 'none';
+	}else if( choice.value === 'sphere' ){
+		rectangleParam.style.display = 'none';
+		squareParam.style.display = 'none';
+		circleParam.style.display = 'none';
+		sphereParam.style.display = 'block';
 	}
 
 }
@@ -89,6 +105,11 @@ compute.addEventListener('click', function() {
 		
 		squareLength = parseFloat(squareLength.value);
 		message = `The area of your <span class = 'answer'> ${choice.value}</span> shape is <p><span class = 'answer'>${areaSquare(squareLength)}</span></p> ${units} `;
+		print(message);
+
+	} else if( choice.value === 'sphere' ){
+		sphereRadius = parseFloat(sphereRadius.value);
+		message = `The area of your <span class = 'answer'> ${choice.value}</span> shape is <p><span class = 'answer'>${areaSquare(sphereRadius)}</span></p> ${units} `;
 		print(message);
 
 	} else{

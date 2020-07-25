@@ -20,6 +20,7 @@
 			<h4>Select shape</h4>
 			<select type="text" id="choice" onchange="shapeData()">
 				<option value="shape">Choose shape</option>
+				<option value="sphere">Sphere</option>
 				<option value="circle">Circle</option>
 				<option value="square">Square</option>
 				<option value="rectangle">Rectangle</option>
@@ -27,7 +28,11 @@
 			</select>
 			<div class="shapeDetail" id="circleParam">
 				<label class="dataField" for="radius">Enter circle radius</label><br>
-				<input class="dataField" type="text" id="radius" autofocus>
+				<input class="dataField" type="text" id="circleRadius" autofocus>
+			</div>
+			<div class="shapeDetail" id="sphereParam">
+				<label class="dataField" for="radius">Enter sphere radius</label><br>
+				<input class="dataField" type="text" id="sphereRadius" autofocus>
 			</div>
 			<div class="shapeDetail" id="squareParam">
 				<label class="dataField" for="squareLength">Enter side length:</label><br>
