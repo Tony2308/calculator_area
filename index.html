@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Area calculator</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:100,200,300,400,500,600,700,800" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/798eadb371.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<main>
+		<h1>Area Calculator</h1>
+		<div id="output">
+			
+		</div>
+		<hr>
+		<div class="shape-wrapper">
+			<h2>The shape detail</h2>
+			<h4>Select shape</h4>
+			<select type="text" id="choice" onchange="shapeData()">
+				<option value="shape">Choose shape</option>
+				<option value="circle">Circle</option>
+				<option value="square">Square</option>
+				<option value="rectangle">Rectangle</option>
+				<option value="custom">Custom</option>
+			</select>
+			<div class="shapeDetail" id="circleParam">
+				<label class="dataField" for="radius">Enter circle radius</label><br>
+				<input class="dataField" type="text" id="radius" autofocus>
+			</div>
+			<div class="shapeDetail" id="squareParam">
+				<label class="dataField" for="squareLength">Enter side length:</label><br>
+				<input class="dataField" type="text" id="squareLength" autofocus>
+			</div>
+			<div class="shapeDetail" id="rectangleParam">
+				<div>
+					<label class="dataField" for="rectangleLength">Enter rectangle length:</label><br>
+					<input class="dataField" type="text" id="rectangleLength" autofocus>	
+				</div>
+				<div>
+					<label class="dataField" for="width">Enter rectangle width:</label><br>
+					<input class="dataField" type="text" id="width">
+				</div>
+				
+			</div>
+			<div class="shapeDetail" id="customParam">
+				<label class="dataField" for="custom">Custom Shape</label>
+				<input class="dataField" type="text" id="custom">
+			</div>
+			
+			<h4>Select Units</h4>
+			<select type="text" id="units" value="">
+				<option value="selectUnits">Select units</option>
+				<option value="foot">Area in square feet</option>
+				<option value="metres">Area in square metres</option>
+			</select>
+		</div>
+		<button id="calculate">Calculate</button>
+	</main>
+	<script type="text/javascript" src="script.js" ></script>
+</body>
+</html>
