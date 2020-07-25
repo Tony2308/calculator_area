@@ -13,7 +13,7 @@ main{
 	flex-direction: column;
 	align-items: center;
 	width:400px;
-	height: auto;
+	height: 100vh;
 	box-shadow: -4px  2px 2px 4px lightslategrey;
 	padding: 1.5em .5em;
 	background-image: linear-gradient( darkkhaki,50%, darkcyan);
