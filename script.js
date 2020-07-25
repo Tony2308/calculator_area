@@ -94,7 +94,7 @@ compute.addEventListener('click', function() {
 	if (choice.value === 'circle') {
 		
 		circleRadius = parseFloat(circleRadius.value);
-		message = `The area of your <span class = 'answer'>${choice.value}</span> shape is <p><span class = 'answer'>${areaCircle(radius)}</span> </p> ${units} `;
+		message = `The area of your <span class = 'answer'>${choice.value}</span> shape is <p><span class = 'answer'>${areaCircle(circleRadius)}</span> </p> ${units} `;
 		print(message);
 
 	} else if(choice.value === 'rectangle'){
