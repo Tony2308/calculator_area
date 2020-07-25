@@ -94,7 +94,7 @@ compute.addEventListener('click', function() {
 	if (choice.value === 'circle') {
 		
 		circleRadius = parseFloat(circleRadius.value);
-		message = `The area of your <span class = 'answer'>${choice.value}</span> shape is <p><span class = 'answer'>${areaCircle(circleRadius)}</span> </p> ${units} `;
+		message = `The area of your <p class = 'answer'>${choice.value}</p> shape is <p><span class = 'answer'>${areaCircle(circleRadius)}</span> </p> ${units} `;
 		print(message);
 
 	} else if(choice.value === 'rectangle'){
@@ -102,18 +102,18 @@ compute.addEventListener('click', function() {
 		 rectangleLength = parseFloat(rectangleLength.value);
 		 width = parseFloat(width.value);
 
-		message = `The area of your <span class = 'answer'>${choice.value}</span> shape is <p><span class = 'answer'>${areaRectangle(rectangleLength,width)}</span></p> ${units} `;
+		message = `The area of your <p class = 'answer'>${choice.value}</p> shape is <p><span class = 'answer'>${areaRectangle(rectangleLength,width)}</span></p> ${units} `;
 		print(message);
 
 	} else if(choice.value === 'square'){
 		
 		squareLength = parseFloat(squareLength.value);
-		message = `The area of your <span class = 'answer'> ${choice.value}</span> shape is <p><span class = 'answer'>${areaSquare(squareLength)}</span></p> ${units} `;
+		message = `The area of your <p class = 'answer'> ${choice.value}</p> shape is <p><span class = 'answer'>${areaSquare(squareLength)}</span></p> ${units} `;
 		print(message);
 
 	} else if( choice.value === 'sphere' ){
 		sphereRadius = parseFloat(sphereRadius.value);
-		message = `The area of your <span class = 'answer'> ${choice.value}</span> shape is <p><span class = 'answer'>${areaSquare(sphereRadius)}</span></p> ${units} `;
+		message = `The area of your <p class = 'answer'> ${choice.value}</p> shape is <p><span class = 'answer'>${areaSquare(sphereRadius)}</span></p> ${units} `;
 		print(message);
 
 	} else{

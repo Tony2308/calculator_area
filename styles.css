@@ -1,4 +1,6 @@
-
+*{
+	transition: .7s;
+}
 body{
 	display: flex;
 	justify-content: center;
