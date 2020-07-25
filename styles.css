@@ -46,6 +46,7 @@ main h1{
 	font-weight: lighter;
 	text-align: center;
 	color: whitesmoke;
+	overflow-x: hidden;
 }
 
 main hr{

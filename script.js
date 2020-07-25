@@ -83,15 +83,18 @@ function shapeData(){
 	}
 
 }
-
+// button events
 compute.addEventListener('click', function() {
 
 	if (units.value === 'foot') {
 		units = 'square feets';
 	} else if (units.value === 'metres') {
 		units = 'square metres';
+	}else{
+		message = `please select a valid unit`;
+		print(message);
 	}
-
+// c
 	if (choice.value === 'circle') {
 		
 		circleRadius = parseFloat(circleRadius.value);
