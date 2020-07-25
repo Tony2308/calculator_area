@@ -34,6 +34,7 @@ let square;
 let choice = document.querySelector('#choice');
 let units = document.querySelector('#units');
 let compute = document.querySelector('#calculate');
+let clear = document.querySelector('#clear');
 let output = document.querySelector('#output');
 let shapeDetail = document.querySelector('.shapeDetail');
 let circleParam = document.querySelector('#circleParam');
@@ -121,6 +122,10 @@ compute.addEventListener('click', function() {
 		print(message);
 	}
 
+});
+
+clear.addEventListener('click', function(){
+	location.reload();
 });
 
 
