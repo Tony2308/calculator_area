@@ -23,7 +23,7 @@ function areaCircle(radius) {
 
 //sphere function
 function areaSphere(sphereRadius) {
-	const areaSphere = (4 * 3.142 *sphereRadius*sphereRadius);
+	const areaSphere = 4 * 3.142 *sphereRadius*sphereRadius;
 	return areaSphere;
 }
 
@@ -114,7 +114,7 @@ compute.addEventListener('click', function() {
 
 	} else if( choice.value === 'sphere' ){
 		sphereRadius = parseFloat(sphereRadius.value);
-		message = `The area of your <p class = 'answer'> ${choice.value}</p> shape is <p><span class = 'answer'>${areaSquare(sphereRadius)}</span></p> ${units} `;
+		message = `The area of your <p class = 'answer'> ${choice.value}</p> shape is <p><span class = 'answer'>${areaSphere(sphereRadius)}</span></p> ${units} `;
 		print(message);
 
 	} else{
