@@ -60,17 +60,21 @@ function shapeData(){
 		sphereParam.style.display = 'none';
 		
 	} else if( choice.value === 'square' ){
+		
 		squareParam.style.display = 'block';
 		circleParam.style.display = 'none';
 		rectangleParam.style.display = 'none';
 		sphereParam.style.display = 'none';
 
 	}else if( choice.value ===  'rectangle'  ) {
+
 		rectangleParam.style.display = 'block';
 		squareParam.style.display = 'none';
 		circleParam.style.display = 'none';
 		sphereParam.style.display = 'none';
+
 	}else if( choice.value === 'sphere' ){
+
 		rectangleParam.style.display = 'none';
 		squareParam.style.display = 'none';
 		circleParam.style.display = 'none';
