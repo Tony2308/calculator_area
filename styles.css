@@ -135,3 +135,14 @@ div.shape-wrapper select{
 div.shape-wrapper h4{
 	font-size: 1.5em;
 }
+
+main small.footer{
+	width: 100%;;
+	margin-top: 4em;
+	text-align: center;
+}
+
+main small.footer span i{
+	margin-right: 2em;
+	
+}
