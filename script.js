@@ -60,7 +60,7 @@ function shapeData(){
 		sphereParam.style.display = 'none';
 		
 	} else if( choice.value === 'square' ){
-		
+
 		squareParam.style.display = 'block';
 		circleParam.style.display = 'none';
 		rectangleParam.style.display = 'none';
@@ -93,7 +93,7 @@ compute.addEventListener('click', function() {
 
 	if (choice.value === 'circle') {
 		
-		radius = parseFloat(radius.value);
+		circleRadius = parseFloat(circleRadius.value);
 		message = `The area of your <span class = 'answer'>${choice.value}</span> shape is <p><span class = 'answer'>${areaCircle(radius)}</span> </p> ${units} `;
 		print(message);
 
