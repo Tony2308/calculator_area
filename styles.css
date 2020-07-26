@@ -131,6 +131,15 @@ div.shape-wrapper select{
 	padding: 0.5em 0.8em;
 	font-size: 1.2em;
 	background-color: darkkhaki;
+	cursor: pointer;
+	border: unset;
+}
+
+div.shape-wrapper select option:hover{
+	background-color: teal;
+	cursor: pointer;
+	border: unset;
+	border-bottom: 1px solid grey;
 }
 
 div.shape-wrapper h4{

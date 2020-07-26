@@ -20,12 +20,24 @@
 			<h4>Select shape</h4>
 			<select type="text" id="choice" onchange="shapeData()">
 				<option value="shape">Choose shape</option>
+				<option value="triangle">Triangle</option>
 				<option value="sphere">Sphere</option>
 				<option value="circle">Circle</option>
 				<option value="square">Square</option>
 				<option value="rectangle">Rectangle</option>
 				<option value="custom">Custom</option>
 			</select>
+			<div class="shapeDetail" id="triangleParam">
+				<div>
+					<label class="dataField" for="triangleLength">Enter triangle length:</label><br>
+					<input class="dataField" type="text" id="triangleLength" autofocus>	
+				</div>
+				<div>
+					<label class="dataField" for="triangleHeight">Enter triangle height:</label><br>
+					<input class="dataField" type="text" id="triangleHeight">
+				</div>
+				
+			</div>
 			<div class="shapeDetail" id="circleParam">
 				<label class="dataField" for="circleRadius">Enter circle radius</label><br>
 				<input class="dataField" type="text" id="circleRadius" autofocus>

@@ -27,6 +27,15 @@ function areaSphere(sphereRadius) {
 	return areaSphere;
 }
 
+//triangle function
+
+function areaTriangle(triangleLength,triangleHeight){
+	const areaTriangle = 0.5  * triangleLength * triangleHeight;
+	return areaTriangle;
+}
+
+
+
 //variable declarations and initializations
 let cirle;
 let rectangle;
@@ -41,6 +50,7 @@ let circleParam = document.querySelector('#circleParam');
 let squareParam = document.querySelector('#squareParam');
 let rectangleParam = document.querySelector('#rectangleParam');
 let sphereParam = document.querySelector('#sphereParam');
+let triangleParam = document.querySelector('#triangleParam');
 let customParam = document.querySelector('#customParam');
 
 //parametres variables
@@ -50,6 +60,8 @@ let rectangleLength = document.querySelector('#rectangleLength');
 let width = document.querySelector('#width');
 let circleRadius = document.querySelector('#circleRadius');
 let sphereRadius = document.querySelector('#sphereRadius');
+let triangleLength = document.querySelector('#triangleLength');
+let triangleHeight = document.querySelector('#triangleHeight');
 
 //displaying the selected parameter details
 function shapeData(){
@@ -80,6 +92,13 @@ function shapeData(){
 		squareParam.style.display = 'none';
 		circleParam.style.display = 'none';
 		sphereParam.style.display = 'block';
+
+	}	else if( choice.value === 'triangle' ){
+		triangleParam.style.display = 'block';
+		rectangleParam.style.display = 'none';
+		squareParam.style.display = 'none';
+		circleParam.style.display = 'none';
+		sphereParam.style.display = 'none';
 	}
 
 }
@@ -120,6 +139,12 @@ compute.addEventListener('click', function() {
 		message = `The area of your <p class = 'answer'> ${choice.value}</p> shape is <p><span class = 'answer'>${areaSphere(sphereRadius)}</span></p> ${units} `;
 		print(message);
 
+	}  else if( choice.value === 'triangle' ){
+		triangleLength = parseFloat(triangleLength.value);
+		triangleHeight = parseFloat(triangleHeight.value);
+		message = `The area of your <p class = 'answer'> ${choice.value}</p> shape is <p><span class = 'answer'>${areaTriangle(triangleLength,triangleHeight)}</span></p> ${units} `;
+		print(message)
+	
 	} else{
 		message = `the shape is out of scope`;
 		print(message);
